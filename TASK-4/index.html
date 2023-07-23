@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <form name="form1">
+      <div class="container flex flex-col mx-auto items-center">
+        <input class="text-box" type="text" name="answer" />
+
+        <input
+          type="button"
+          value="Clear"
+          onclick="form1.answer.value = ' ' "
+          class="clear equal"
+        />
+
+        <div class="row">
+          <input type="button" value="1" onclick="form1.answer.value += '1' " />
+          <input type="button" value="2" onclick="form1.answer.value += '2' " />
+          <input type="button" value="3" onclick="form1.answer.value += '3' " />
+          <input type="button" value="+" onclick="form1.answer.value += '+' " />
+        </div>
+
+        <div class="row">
+          <input type="button" value="4" onclick="form1.answer.value += '4' " />
+          <input type="button" value="5" onclick="form1.answer.value += '5' " />
+          <input type="button" value="6" onclick="form1.answer.value += '6' " />
+          <input type="button" value="-" onclick="form1.answer.value += '-' " />
+        </div>
+
+        <div class="row">
+          <input type="button" value="7" onclick="form1.answer.value += '7' " />
+          <input type="button" value="8" onclick="form1.answer.value += '8' " />
+          <input type="button" value="9" onclick="form1.answer.value += '9' " />
+          <input type="button" value="x" onclick="form1.answer.value += '*' " />
+        </div>
+
+        <div class="row">
+          <input type="button" value="0" onclick="form1.answer.value += '0' " />
+          <input type="button" value="." onclick="form1.answer.value += '.' " />
+          <input type="button" value="=" class="equal" onclick="calculate()" />
+          <input type="button" value="/" onclick="form1.answer.value += '/' " />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
